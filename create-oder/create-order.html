@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кызмат көрсөтүү</title>
+    <link rel="stylesheet" href="create-order.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header class="PortalHeader">
+        <main class="Layout PortalHeader-Content">        
+                <div class="Logo">
+                    <a href="/index.html">
+                        <img src="/img/Logosite (2).png" alt="Logo"></a></div>
+                    <div class="PortalHeader-Search">
+                        <div class="SearchHandler">
+                            <div class="Textinput2">
+                                <div class="Textinput2-Container">
+                                <span class="Textinput Textinput2-Input Textinput2-Input_size_s Textinput2-Input_pin_round-round Textinput2-Input_theme_gray">
+                                  <input aria-invalid="false" autocomplete="off" class="Textinput-Control" placeholder="Кандай жардам керек?" value="">
+                                    <span class="Textinput-Box"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="SearchSubmit">
+                          <img src="/img/search-icon.png" alt="icon">
+                        </div> 
+                    </div>
+                </div>
+                <div class="PortalHeader-Actions">
+                    <div class="PortalHeader-User PortalHeader-ActionItem">
+                        <a class="User-Enter" href="/registration/">
+                            <button type="button" class="Button2 Button2_size_sd Button2_theme_normal Button2_pin_circle" autocomplete="off">
+                                <span class="Button2-Text">Кирүү</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </main>
+    </header>
+    <div class="content">
+        <div class="instructions">
+            <div class="instructions-head">Куруучуларды оңой табыңыз</div>
+            <div class="instructions-body">
+                <div class="instructions-column">
+                    <div class="element"></div>
+                    <div class="item">
+                        <div class="title">Жумуш жөнүндө маалымат бериңиз</div>
+                        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nobis?</div>
+                    </div>
+                    <div class="element"></div>
+                    <div class="item">
+                        <div class="title">Сунуштарды салыштырыңыз</div>
+                        <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut adipisci eaque nisi ut consequatur enim quisquam quidem sequi, repellat a.</div>
+                    </div>
+                    <div class="element"></div>
+                    <div class="item">
+                        <div class="title">Куруучу тандаңыз</div>
+                        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, similique.</div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="container">
+            <div class="forma">
+                <form method="post" enctype="multipart/form-data">
+                    <div class="textinput1">
+                        <input class="textinput1-stylize" type="text" name="short-task-name" value="" placeholder="Жумуш жөнүндө кыскача маалымыат"/>
+                    </div>
+                    <div class="textinput2">
+                        <textarea class="textinput2-stylize" name="more-about" rows="4" maxlength="20000" placeholder="Жумуш жөнүндө кененирээк айтып бериңиз" spellcheck="true" ></textarea>
+                    </div>
+                    <div class="container-row">
+                        <div class="column">
+                            <select class="stylize1" id="choice" name="choice">
+                                <option  value="need builders">Куруучу керек</option>
+                                <option  value="I am a builder">Мен куруучумун</option>
+                            </select>
+                        </div>
+                        <div class="column">
+                            <div class="custom-select">
+                                <select class="location" id="location" name="location">
+                                    <option value="Bishkek">Бишкек</option>
+                                    <option value="Osh">Ош</option>
+                                    <option value="Jalal-Abad">Жалал-Абад</option>
+                                    <option value="Cholpon-Ata">Чолпон-Ата</option>
+                                    <option value="Naryn">Нарын</option>
+                                    <option value="Talas">Талас</option>
+                                    <option value="Batken>">Баткен</option>
+                                </select>
+                            </div>    
+                        </div>
+                        <div class="column">
+                            <div class="for-select">
+                                <select class="for" id="for" name="service">
+                                    <option value="for service">Кызмат үчүн</option>
+                                    <option value="for hour">Саат үчүн</option>
+                                    <option value="for day">Күн үчүн</option>
+                                    <option value="for month">Ай үчүн</option>
+                                    <option value="for м²">м² үчүн</option>
+                                </select>
+                            </div>    
+                        </div>
+                        <div class="column">
+                            <div class="pin-thefile">
+                                <input class="inputfile" type="file" id="fileInput" name="file"  onchange="handleFileChange(this)">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="calendar">
+                                <input class="choose-date" type="date" id="calendar" name="calendar">
+                            </div>
+                        </div>    
+                    </div>
+                    <hr class="m-line">
+                    <div class="button">
+                        <button class="publish" type="submit">Жөнөтүү</button> 
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+        <footer>
+            <div class="PortalFooter">
+              <div class="PortalFooter-box">
+                <div class="item">
+                  <a href="ordering/">Буюртма берүү</a></div>
+                <div class="item">
+                  <a href="master/">Мастер табуу</a></div>
+                <div class="item">
+                  <a href="#">Биз тууралуу</a></div>
+                <div class="item">
+                  <a href="myorders/">Буюртмаларым</a></div>
+                <div class="item">
+                  <a href="builder/">Аткаруучу болуу</a></div>
+                <div class="item">
+                  <a href="#">Жардам</a></div>
+              </div>
+              <hr class="footer-line">
+              <div class="contact">
+                <span><i class='bx bx-map' ></i>Bishkek Djal,Kyrgyzstan</span>
+                <span><i class='bx bx-phone' ></i>+996990123456</span>
+                <span><i class='bx bx-envelope' ></i>kurulush.tap@.com</span>
+              </div>
+            </div>
+        </footer>
+        <script >
+            // function handleFileChange(input) {
+            //     var fileName = input.files[0].name;
+            //     var label = input.parentNode.querySelector('.fileInputLabel');
+            //     label.textContent = fileName;
+            // }
+         
+             </script>
+    </html>
