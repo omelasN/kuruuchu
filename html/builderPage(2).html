@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кызмат көрсөтүү</title>
+    <link rel="stylesheet" href="/css/builderPage(2).css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header class="PortalHeader">
+        <main class="Layout PortalHeader-Content">        
+                <div class="Logo">
+                  <a href="/html/index.html">
+                    <img src="/img/Logosite (2).png" alt="Logo"></a></div>
+                    <div class="PortalHeader-Search">
+                        <div class="SearchHandler">
+                            <div class="Textinput2">
+                                <div class="Textinput2-Container">
+                                <span class="Textinput Textinput2-Input Textinput2-Input_size_s Textinput2-Input_pin_round-round Textinput2-Input_theme_gray">
+                                  <input aria-invalid="false" autocomplete="off" class="Textinput-Control" placeholder="Кандай жардам керек?" value="">
+                                    <span class="Textinput-Box"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="SearchSubmit">
+                          <img src="/img/search-icon.png" alt="icon">
+                        </div> 
+                    </div>
+                </div>
+                <div class="PortalHeader-Menu">
+                    <div class="PortalHeader-NavigationLinks">
+                        <div class="PortalHeader-NavigationLinkWrap">
+                            <a class="Link Link_theme_greyDark PortalHeader-NavigationLink" href="/html/create-order.html">Буюртма берүү</a>
+                        </div>
+                        <div class="PortalHeader-NavigationLinkWrap">
+                            <a class="Link Link_theme_greyDark PortalHeader-NavigationLink" href="/html/find-master.html">Мастер табуу</a>
+                        </div>
+                        <div class="PortalHeader-NavigationLinkWrap">
+                            <a class="Link Link_theme_greyDark PortalHeader-NavigationLink" href="/html/my-orders.html">Буюртмаларым</a>
+                        </div>
+                        <div class="PortalHeader-NavigationLinkWrap"><a class="Link Link_theme_greyDark PortalHeader-NavigationLink" href="/html/builderPage(1.1).html">Аткаруучу болуу</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="PortalHeader-Actions">
+                    <div class="PortalHeader-User PortalHeader-ActionItem">
+                        <a class="User-Enter" href="registration/">
+                            <button type="button" class="Button2 Button2_size_sd Button2_theme_normal Button2_pin_circle" autocomplete="off">
+                                <span class="Button2-Text">Кирүү</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </main>
+    </header>
+    <div class="wrapper">
+        <div class="title">
+            <h3>Кызмат категорияларын тандаңыз</h3>
+        </div>
+        <hr class="footer-line">
+        <form action="">
+            <div class="category">
+                <div class="checkbox-container">
+                    <input type="checkbox" name="key" value="yes">
+                    <label for="key">Ачкыч орнотуу</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="repair" value="yes">
+                    <label for="repair">Оңдоо иштери</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="electr" value="yes">
+                    <label for="electr">Электр жумуштары</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="brick" value="yes">
+                    <label for="brick">Кирпич коюу</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="roof" value="yes">
+                    <label for="roof">Чатыр жабуу</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="plumbing" value="yes">
+                    <label for="plumbing">Сантехника</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="painting" value="yes">
+                    <label for="painting">Сырдоо иштери</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="welding" value="yes">
+                    <label for="welding">Ширетүү иштери</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="Design and evaluation" value="yes">
+                    <label for="Design and evaluation">Долбоорлоо жана баалоо</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="wood" value="yes">
+                    <label for="wood">Жыгач иштери</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="water" value="yes">
+                    <label for="water">Суу менен камсыздоо жана канализация</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="Foundation pouring" value="yes">
+                    <label for="Foundation pouring">Фундамент куюу</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="Complete construction" value="yes">
+                    <label for="Complete construction">Толук курулуш</label>
+                </div>
+            </div>
+            <div class="button">
+                <button class="back" type="button" onclick="goBack()">Артка</button>
+                <button class="continue" type="submit">Улантуу</button>
+            </div>
+        </form>
+        
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        </script>
+</body>
+</html>        

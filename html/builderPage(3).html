@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/builderPage(3).css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<header class="PortalHeader">
+    <main class="Layout PortalHeader-Content">        
+            <div class="Logo">
+              <a href="index.html">
+                <img src="/img/Logosite (2).png" alt="Logo"></a></div>
+            </div>
+            <div class="PortalHeader-Actions">
+                <div class="PortalHeader-User PortalHeader-ActionItem">
+                    <a class="User-Enter" href="registration/">
+                        <button type="button" class="Button2 Button2_size_sd Button2_theme_normal Button2_pin_circle" autocomplete="off">
+                            <span class="Button2-Text">Кирүү</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </main>
+</header>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <div class="photo">
+                <div class="description">
+                    <h5>Сүрөт</h5>
+                    <p>Сүрөт коюңуз бул ишеничтүү кызматташууга жардам берет</p>
+                    </div>
+                    <div class="box_shadow">
+                        <div class="box_shadow_description">
+                            <h6>Сунуш</h6>
+                            <p>Паспорт үчүн сүрөткө түшкөндөй, бир аз жылмайып, сүрөткө тартыңыз.
+                                Бул табигый жарыкта эң жакшы. Жакшы сүрөт элдин ишенимин арттырат
+                            </p>
+                        </div>
+                    <div class="box_shadow_img">
+                        <img src="https://flomaster.top/o/uploads/posts/2024-02/1708408607_flomaster-top-p-serie-lyudi-vkontakte-risunok-6.jpg" alt="">
+                        <div class="box_shadow_img_btn">
+                            <button>
+                                <input type="file" class="inputfile" name="photo" placeholder=" ">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/16/16410.png" alt="" class="img_icon">Жүктөө
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="description_2">
+                    <h5>Өзүңүз жөнүндө</h5>
+                    <p>
+                        Өзүңүз жөнүндө кеңири айтып бериңиз, профилдерге шилтемелерди кошуңуз,
+                        социалдык тармактарда жана мессенджерлерде кардарлар сиз менен жакындан тааныша алышат
+                    </p>
+                </div>
+                <div class="box_shadow_2">
+                    <div class="box_shadow_description">
+                        <h6>Жалпы маалымат</h6>
+                        <p>
+                            Өзүңүздүн күчтүү жактарыңыз жөнүндө кыскача жазыңыз,
+                            маанилүү сапаттар, кандай куралдарды жана технологияларды колдоносуз. Атайын тармактардагы кызматтар жөнүндө жазыңыз
+                    </div>
+                    <div>
+                        <p>Мен жөнүндө</p>
+                        <textarea class="textArea" placeholder="Кардарларыңызга өзүңүз жөнүндө айтып бериңиз" type="text"></textarea>
+                    </div>
+                    <div class="optionList">
+                        <div>
+                            <p>Жыныс</p>
+                            <select class="select" name="gender">
+                                <option value="male">Эркек</option>
+                                <option value="female">Аял</option>
+                            </select>
+                        </div>
+                        <div>
+                            <form action="">
+                                <p>День рождения</p>
+                                <div class="optionThree">
+                                    <select class="option" id="day" name="day"></select>
+                                    <select class="option" id="month" name="month"></select>
+                                    <select class="option" id="year" name="year"></select>
+                                </div>
+                            </form>                        
+                            <script src="/js/builderPage(3).js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="box_shadow_2" style="height: 270px;">
+                    <div class="box_shadow_description">
+                        <div class="address">
+                            <h6>Дарегиңиз</h6>
+                            <p>Биз буйрутмаларды жакын жерден издейбиз жана бул аймактардагы кардарларга профилди көбүрөөк көрсөтөбүз</p>
+                        </div>
+                        <div class="box_shadow_3"></div>
+                    </div>
+                    <div class="box_shadow_child">
+                        <div>
+                            <h6>Жумуш дарегиңиз</h6>
+                            <p>
+                                Жакын жерде буйрутмаларды алуу үчүн так дарегиңизди бериңиз.
+                                Башка колдонуучулар аны көрбөйт - биз аларга болжолдуу аймакты көрсөтөбүз
+                            </p>
+                        </div>
+                        <div>
+                            <button class="shadow_button" id="addAddressButton">+ Дарек кошуу</button>
+                        </div>
+                    </div>
+                    <div id="addressFormContainer" style="display: none;">
+                        <form id="addressForm">
+                            <input type="text" id="addressInput" name="address" placeholder="Дарегиңизди жазыңыз">
+                            <button type="button" id="submitAddressButton">Кошуу</button>
+                        </form>
+                    </div>
+                
+                    <div id="addressCardContainer"></div>
+                
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                        const addAddressButton = document.getElementById("addAddressButton");
+                        const addressFormContainer = document.getElementById("addressFormContainer");
+
+                        addAddressButton.addEventListener("click", function() {
+                            addressFormContainer.style.display = "block";
+                        });
+                    });
+                    </script>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="box_shadow_2" style="height: 270px;">
+                    <div class="box_shadow_description">
+                        <div class="address">
+                            <h6>Профили в других сервисах</h6>
+                            <p>
+                                Скопируйте ссылки на ваши профили в социальных сетях
+                                и мессенджеры, вставьте их в соответствуюзие поля. Это повысит доверие
+                                к вашему профилю и ускорит связь с вами
+                            </p>
+                        </div>
+    
+                    </div>
+                    <div class="inputListMain">
+                        <h6>Мессенджеры</h6>
+                        <div class="inputList">
+                            <div>
+                                <input placeholder="+" type="text">
+                                <div>
+                                    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <input placeholder="@login" type="text">
+                                <div>
+                                    <img src="https://img.freepik.com/premium-vector/vinnytsia-ukraine-april-27-2023-popular-social-media-icon-telegram-vector-design_545793-1692.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+            <div class="photo">
+                <div class="description_2">
+                    <h5>Видео</h5>
+                    <p>
+                        Видео расскажет о вас лучше чем текст
+                    </p>
+                </div>
+                <div class="box_shadow_2" style="height: 350px">
+                    <div class="box_shadow_description">
+                        <h6>Видео обращение</h6>
+                        <p>
+                            Запишите короткую видеопрезентацию поприветсвуйте заказчиков. Видео отобразится
+                            в публичном профиле. Снимайте при естественном освещении и держите камеру горизонтально
+                        </p>
+                    </div>
+                    <div class="box_shadow_child center">
+                        <div class="image">
+                            <img src="https://cdn-icons-png.flaticon.com/512/16/16410.png" alt="">
+                        </div>
+                        <p>Нажмите или перетащите видео</p>
+                    </div>
+                </div>
+                <div class="box_shadow_2" style="height: 350px">
+                    <div class="box_shadow_description">
+                        <h6>Видео о работе</h6>
+                        <p>
+                            Загрузите видео , где рассказываете про работы
+                        </p>
+                    </div>
+                    <div class="box_shadow_child center">
+                        <div class="image">
+                            <img src="https://cdn-icons-png.flaticon.com/512/16/16410.png" alt="">
+                        </div>
+                        <p>Нажмите или перетащите видео</p>
+                    </div>
+                </div>
+    
+            </div>
+        </form>
+        <div class="photo">
+
+            <div class="box_shadow_2" style="height: 100px; width: 500px;">
+                <div class="box_shadow_description">
+                    <div class="imageListEnd">
+                        <img src="https://cdn-icons-png.flaticon.com/256/185/185980.png" alt="">
+                        <h6>Примеры работ</h6>
+                        <button>Новое</button>
+                    </div>
+                    <p>
+                       Пока тут пусто
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="photo">
+
+            <div class="box_shadow_2" style="height: 500px; ">
+                <div class="box_shadow_description">
+                    <div class="img_inter">
+                        <img src="https://www.ivd.ru/images/cache/2020/9/24/fit_960_530_false_crop_1800_1012_0_277_q90_1473791_6f65a034577bf601aa4ff69e7.jpeg" alt="">
+                    </div>
+                    <div class="mainDesc">
+                        <h2>Добавьте примеры работ</h2>
+                        <p class="description_end">
+                            Расскажите о своем опыте клиентам
+                            с помощью примеров, отобразим выполненные
+                            заказы в вашем профиле
+                        </p>
+                        <button class="shadow_button" style="background: orangered; color: #fff;">+ Добавить работу</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+</body>
+</html>
